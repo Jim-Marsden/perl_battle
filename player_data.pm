@@ -24,8 +24,8 @@ sub set_health
 
 sub do_damage
 {
-    print "$health $_[0] $health-$_[0]\n";
-    $health = $health - @_;
+    
+    $health = $health - $_[0];
     if($health < 0)
     {
         $health = 0;
